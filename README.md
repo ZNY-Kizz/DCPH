@@ -1,8 +1,8 @@
-# DCPH: Deep Contrastive Hashing with Proxy Guidance
+# DCPH: Deep Contrastive Hashing with Proxy Guidance 🎬
 
 Implementation of DCPH for video-text cross-modal retrieval using deep contrastive hashing with proxy guidance.
 
-## Requirements
+## Requirements ⚙️
 
 Python 3.7+
 PyTorch 1.8+
@@ -10,13 +10,13 @@ CUDA (for GPU training)
 
 
 
-## Data Preparation
+## Data Preparation 📂
 
 Prepare your dataset in the following format:
 Each NPZ file should contain video_feature, text_feature, and label.
 JSON files should contain video IDs and corresponding label information.
 
-## Usage
+## Usage 🚀
 
 ### Training
 
@@ -42,7 +42,7 @@ python train.py --train_json path/to/train.json --val_json path/to/val.json --te
 python test.py --model_path work_dirs/64/TIMESTAMP
 ```
 
-## Configuration
+## Configuration 🔧
 
 Edit config.py to adjust hyperparameters:
 binary_dim: Hash code dimension
@@ -51,11 +51,12 @@ batch_size: Batch size
 lr: Learning rate
 device: cuda:0 or cpu
 
-## Notes
+## Notes 📝
 
 Make sure codetable.xlsx is in the project root directory.
 Dataset paths can be specified via command line arguments. If not provided, default paths will be used.
 CLIP model will be downloaded automatically on first run.
+
 
 
 
