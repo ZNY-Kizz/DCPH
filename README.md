@@ -8,11 +8,7 @@ Python 3.7+
 PyTorch 1.8+
 CUDA (for GPU training)
 
-## Installation
 
-```bash
-pip install -r requirements.txt
-```
 
 ## Data Preparation
 
@@ -60,5 +56,6 @@ device: cuda:0 or cpu
 Make sure codetable.xlsx is in the project root directory.
 Dataset paths can be specified via command line arguments. If not provided, default paths will be used.
 CLIP model will be downloaded automatically on first run.
+
 
 
